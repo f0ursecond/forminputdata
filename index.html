@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+<body>
+    <form action="index.php" method="post">
+
+        <table>
+            <td>
+                <tr>
+                    <input type="text" name="namasiswa" placeholder="Masukan Nama" required
+                        oninvalid="this.setCustomValidity('Nama harus diisi')" oninput="setCustomValidity('')">
+                    <input type="number" name="nis" placeholder="Masukan Nis" required
+                        oninvalid="this.setCustomValidity('Nis harus diisi')" oninput="setCustomValidity('')">
+                </tr>
+            </td>
+
+
+            <td>
+                <select name="kelas" required oninvalid="this.setCustomValidity
+                    ('Kelas harus di pilih salah satu')" oninput="setCustomValidity('')">
+                    <option selected hidden value="">Pilih kelas</option>
+                    <option value="X RPL">X RPL</option>
+                    <option value="X AKL 1">X AKL 1</option>
+                    <option value="X AKL 2">X AKL 2</option>
+                    <option value="X AKL 3">X AKL 3</option>
+                    <option value="X OTKP 1">X OTKP 1</option>
+                    <option value="X OTKP 2">X OTKP 2</option>
+                    <option value="X OTKP 3">X OTKP 3</option>
+                    <option value="X BDP 1">X BDP 1</option>
+                    <option value="X BDP 2">X BDP 2</option>
+                    <option value="X BDP 3">X BDP 3</option>
+                    <option value="XI RPL">XI RPL</option>
+                    <option value="XI AKL 1">XI AKL 1</option>
+
+                </select>
+            </td>
+
+
+
+            <tr>
+                <td><input type="submit" value="Submit" name="submit"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

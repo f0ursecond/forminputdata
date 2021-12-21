@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Sarabun:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #373e98;
+}
+
+form {
+  text-align: center;
+  margin: auto;
+  margin-top: 190px;
+}
+
+select {
+  text-align: center;
+  margin: auto;
+  width: 120px;
+}
+
+table {
+  margin: auto;
+  padding: 20px;
+}
+
+input[type="submit"] {
+  font-family: poppins;
+  margin-top: 20px;
+  width: 150px;
+}
+
+input {
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  border-radius: 50px;
+  border: black 1px solid;
+}
+
+select {
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+}
