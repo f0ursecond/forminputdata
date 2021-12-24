@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
         $dbUsername = "root";
         $dbPassword = "";
         $dbName = "dbsekolah_alifzulfanur";
-
+ 
         $conn = new mysqli($host, $dbUsername, $dbPassword, $dbName);
 
         if ($conn->connect_error) {

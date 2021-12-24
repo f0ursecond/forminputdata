@@ -41,3 +41,8 @@ select {
   text-align: center;
   border-radius: 50px;
 }
+
+a {
+  color: red;
+  border-radius: 20px;
+}
