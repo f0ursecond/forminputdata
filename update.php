@@ -90,14 +90,23 @@ $data=mysqli_fetch_array($sql);
 <table>
     <tr>
         
-        <td> <input type="text" name="namasiswa" value="<?php echo $data['namasiswa']; ?>"> </td>
+        <td> <input type="text" name="namasiswa"
+        required
+                        oninvalid="this.setCustomValidity('Nama harus diisi')" oninput="setCustomValidity('')"
+        value="<?php echo $data['namasiswa']; ?>"> </td>
     </tr>
     <tr>
         
-        <td> <input type="number" name="nis" value="<?php echo $data['nis']; ?>"> </td>
+        <td> <input type="number" name="nis"
+        required
+                        oninvalid="this.setCustomValidity('Nis harus diisi')" oninput="setCustomValidity('')"
+        value="<?php echo $data['nis']; ?>"> </td>
     </tr>
     <td>
-                <select name="kelas" value="<?php echo $data['kelas']; ?>>
+                <select name="kelas"
+                required
+                        oninvalid="this.setCustomValidity('Kelas harus dipilih')" oninput="setCustomValidity('')"
+                value="<?php echo $data['kelas']; ?>>
                     <option selected hidden value="">Pilih kelas</option>
                     <option value="X RPL">X RPL</option>
                     <option value="X AKL 1">X AKL 1</option>
@@ -127,9 +136,9 @@ $data=mysqli_fetch_array($sql);
 include "connect.php";
 
 if(isset($_POST['submit'])){
-mysqli_query($conn, "update tb_siswa set namasiswa = '$_POST[namasiswa]',nis = '$_POST[nis]' where namasiswa= '$_GET[kode]'");
+mysqli_query($conn, "update tb_siswa set kelas='$_POST[kelas]',namasiswa = '$_POST[namasiswa]',nis = '$_POST[nis]' where namasiswa= '$_GET[kode]'");
 
-echo "Data barang telah diubah";
+echo "Data siswa telah diubah";
 echo "<meta http-equiv=refresh content=1;URL='tampil.php'>";
 
 }
