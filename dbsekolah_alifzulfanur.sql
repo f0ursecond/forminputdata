@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 22, 2021 at 08:47 AM
+-- Generation Time: Dec 24, 2021 at 07:04 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 5.6.39
 
@@ -50,6 +50,26 @@ INSERT INTO `tb_siswa` (`id`, `namasiswa`, `nis`, `kelas`) VALUES
 (8, 'nextjacks', 8867, 'X BDP 3'),
 (9, 'juju', 7674, 'X OTKP 2');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_user`
+--
+
+CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL,
+  `userid` int(4) NOT NULL,
+  `username` varchar(10) NOT NULL,
+  `password` varchar(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tb_user`
+--
+
+INSERT INTO `tb_user` (`id`, `userid`, `username`, `password`) VALUES
+(1, 9591, 'zul', '1234');
+
 --
 -- Indexes for dumped tables
 --
@@ -61,6 +81,12 @@ ALTER TABLE `tb_siswa`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -69,6 +95,12 @@ ALTER TABLE `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `tb_user`
+--
+ALTER TABLE `tb_user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

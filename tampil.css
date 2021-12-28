@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Sarabun:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+
+body {
+  background-color: #b1f2ec;
+}
+
+h1 {
+  font-family: "Delius", cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
+table,
+tr {
+  margin: auto;
+  font-family: poppins;
+  border-collapse: collapse;
+}
+
+th {
+  border-collapse: collapse;
+  width: 100px;
+  border: 2px solid black;
+  font-family: sans-serif;
+}
+
+td {
+  border-collapse: collapse;
+  border: 2px solid black;
+  text-align: center;
+  width: 120px;
+}

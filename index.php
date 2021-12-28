@@ -36,6 +36,7 @@ if (isset($_POST['submit'])) {
                 $stmt->bind_param("sis",$namasiswa, $nis, $kelas);
                 if ($stmt->execute()) {
                     echo "New record inserted sucessfully.";
+                    header("Location: tampil.php");
                 }
                 else {
                     echo $stmt->error;
