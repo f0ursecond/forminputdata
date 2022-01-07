@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Siswa</a></li>
+            <li><a class="current" href="guru.html">Guru</a></li>
+            <li><a href="mapel.html">Mapel</a></li>
+        </ul>
+    </div>
+
+    <div class="siswa" id="siswa">
+        <form action="guru.php" method="post">
+
+            <table>
+                <td>
+                    <tr>
+                        <input type="text" name="namaguru" placeholder="Masukan Nama Guru" required
+                            oninvalid="this.setCustomValidity('Nama harus diisi')" oninput="setCustomValidity('')">
+                        <br>
+                        <input type="number" name="nip" placeholder="Masukan Nip" required
+                            oninvalid="this.setCustomValidity('Nis harus diisi')" oninput="setCustomValidity('')">
+                    </tr>
+                </td>
+                <td>
+                    <select name="mapel" required oninvalid="this.setCustomValidity
+                    ('Mapel harus di pilih salah satu')" oninput="setCustomValidity('')">
+                        <option selected hidden value="">Pilih Mapel</option>
+                        <option value="B Indonesia">B Indonesia</option>
+                        <option value="Matematika">Matematika</option>
+                        <option value="B Inggris">B Inggris</option>
+                        <option value="Fisika">Fisika</option>
+                        <option value="Kimia">Kimia</option>
+                        <option value="Penjasorkes">Penjasorkes</option>
+                        <option value="B Jawa">B Jawa</option>
+
+                    </select>
+                </td>
+                <tr>
+                    <td><input type="submit" value="Submit" name="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
